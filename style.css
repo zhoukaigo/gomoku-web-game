@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(15, 30px);
+    grid-template-rows: repeat(15, 30px);
+    gap: 1px;
+    margin: 20px auto;
+    width: fit-content;
+    background-color: #000;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cell.black {
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.cell.white {
+    background-color: #fff;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+#status {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#reset {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
